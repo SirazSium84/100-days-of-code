@@ -104,7 +104,7 @@ scissors = '''
 while True:
     user_input = int(
         input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
-    if user_input not in range(0, 3):
+    if user_input not in range(3):
         print("Invalid Input. You lose!")
         break
     patterns = [rock, paper, scissors]
