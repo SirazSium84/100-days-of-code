@@ -33,12 +33,12 @@ def calculator():
     print(logo)
     while True:
         if result["first_number"] is None:
-            result["first_number"] = int(input("What's the first number: "))
+            result["first_number"] = float(input("What's the first number: "))
             output = 0
         for symbol in operations:
             print(symbol)
         operator = input("Pick an operation from the line above: ")
-        result["next_number"] = int(input("What's the next number?: "))
+        result["next_number"] = float(input("What's the next number?: "))
         calculation_function = operations[operator]
         answer = calculation_function(
             result["first_number"], result["next_number"])
