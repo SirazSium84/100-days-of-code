@@ -30,9 +30,9 @@ result = {"first_number": None}
 
 
 def calculator():
-    print(logo)
     while True:
         if result["first_number"] is None:
+            print(logo)
             result["first_number"] = float(input("What's the first number: "))
             output = 0
         for symbol in operations:
